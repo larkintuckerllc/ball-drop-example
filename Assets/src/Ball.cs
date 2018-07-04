@@ -155,13 +155,13 @@ public class Ball : MonoBehaviour {
         }
     }
 
-	void OnDestroy()
-	{
+    void OnDestroy()
+    {
         MLHands.Stop();
         MLInput.Stop();
         MLWorldPlanes.Stop();
         MLWorldRays.Stop();
-	}
+    }
 
     void HandleOnReceivedPlanes(MLResult result, MLWorldPlane[] planes)
     {
